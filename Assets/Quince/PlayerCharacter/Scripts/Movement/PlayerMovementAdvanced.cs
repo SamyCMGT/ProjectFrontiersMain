@@ -249,6 +249,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         {
             state = MovementState.walking;
             desiredMoveSpeed = walkSpeed;
+            keepMomentum = true;
         }
 
         // Mode - Air
