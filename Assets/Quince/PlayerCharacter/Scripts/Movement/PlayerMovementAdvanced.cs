@@ -94,8 +94,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
     
     public bool restricted;
 
-   // public TextMeshProUGUI text_speed;
-    //public TextMeshProUGUI text_mode;
+    public TextMeshProUGUI text_speed;
+    public TextMeshProUGUI text_mode;
 
     private void Start()
     {
@@ -116,7 +116,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         MyInput();
         SpeedControl();
         StateHandler();
-        //TextStuff();
+        TextStuff();
 
         // handle drag
         if (state == MovementState.walking || state == MovementState.sprinting || state == MovementState.crouching)
@@ -403,7 +403,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         return Vector3.ProjectOnPlane(direction, slopeHit.normal).normalized;
     }
 
-    /*private void TextStuff()
+    private void TextStuff()
     {
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
@@ -414,7 +414,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
             text_speed.SetText("Speed: " + Round(flatVel.magnitude, 1) + " / " + Round(moveSpeed, 1));
 
         text_mode.SetText(state.ToString());
-    }*/
+    }
 
     public static float Round(float value, int digits)
     {
