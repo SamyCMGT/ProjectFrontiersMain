@@ -22,6 +22,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     public float groundDrag;
 
+    [Header("Wall Running")]
+    public float wallrunSpeedIncrease;
+
     [Header("Jumping")]
     public float jumpForce;
     public float jumpCooldown;
@@ -200,7 +203,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (wallrunning)
         {
             state = MovementState.wallrunning;
-            desiredMoveSpeed = wallrunSpeed;
+            desiredMoveSpeed = desiredMoveSpeed += wallrunSpeedIncrease;
         }
 
         // Mode - Sliding
