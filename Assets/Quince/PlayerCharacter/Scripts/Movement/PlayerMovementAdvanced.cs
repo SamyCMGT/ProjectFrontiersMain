@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Diagnostics;
 
 public class PlayerMovementAdvanced : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float climbSpeed;
     public float vaultSpeed;
     public float airMinSpeed;
+
+    public float boostSpeed;
+    public float boostSpeedIncrease;
 
     public float speedIncreaseMultiplier;
     public float slopeIncreaseMultiplier;
@@ -82,6 +86,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         crouching,
         sliding,
         dashing,
+        boosting,
         air
     }
 
@@ -91,6 +96,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public bool dashing;
     public bool climbing;
     public bool vaulting;
+    public bool boosting;
 
     public bool freeze;
     public bool unlimited;
@@ -199,6 +205,13 @@ public class PlayerMovementAdvanced : MonoBehaviour
             desiredMoveSpeed = climbSpeed;
         }
 
+        // Mode - Boosting
+        else if (boosting)
+        {
+            state = MovementState.boosting;
+            desiredMoveSpeed = desiredMoveSpeed += boostSpeedIncrease;
+        }
+
         // Mode - Wallrunning
         else if (wallrunning)
         {
@@ -260,6 +273,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
             if (moveSpeed < airMinSpeed)
                 desiredMoveSpeed = airMinSpeed;
         }
+        
+        
+        
 
         bool desiredMoveSpeedHasChanged = desiredMoveSpeed != lastDesiredMoveSpeed;
         if (lastState == MovementState.dashing) keepMomentum = true;
