@@ -204,6 +204,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (boosting)
         {
             state = MovementState.boosting;
+
+            desiredMoveSpeed = walkSpeed;
+            keepMomentum = true;
         }
 
         // Mode - Wallrunning
