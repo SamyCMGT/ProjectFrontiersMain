@@ -299,7 +299,7 @@ GameObject:
   - component: {fileID: 221692751}
   - component: {fileID: 221692750}
   - component: {fileID: 221692749}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Coob (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221692748}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 8888dfd39759f2147adf9c057bab3ad3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 444111018}
   - component: {fileID: 444111017}
   - component: {fileID: 444111016}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Coob (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444111015}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 8888dfd39759f2147adf9c057bab3ad3, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -720,6 +720,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &869786013 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7710677747367278624, guid: f29cea7416f339e4fa5147d61abcf552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1719037756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &872585203 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2330866258975177718, guid: f29cea7416f339e4fa5147d61abcf552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1719037756}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bab04870fdad9a54c859293cd1386821, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &907477814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6484526048294183840, guid: f29cea7416f339e4fa5147d61abcf552,
+    type: 3}
+  m_PrefabInstance: {fileID: 1719037756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &907477819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907477814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!43 &1008073647
 Mesh:
   m_ObjectHideFlags: 0
@@ -1016,6 +1084,16 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 136168371}
+    - target: {fileID: 598605810955063131, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1281251883396960503, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 1068671
+      objectReference: {fileID: 0}
     - target: {fileID: 2330866258975177718, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: whatIsWall.m_Bits
@@ -1029,7 +1107,7 @@ PrefabInstance:
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: jumpForce
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
@@ -1039,6 +1117,11 @@ PrefabInstance:
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: walkSpeed
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      propertyPath: groundDrag
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
@@ -1053,18 +1136,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
+      propertyPath: orientation
+      value: 
+      objectReference: {fileID: 869786013}
+    - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      propertyPath: climbingScript
+      value: 
+      objectReference: {fileID: 872585203}
+    - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      propertyPath: slideGroundSpeed
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
       propertyPath: whatIsGround.m_Bits
       value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: wallrunSpeedIncrease
-      value: 0.02
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 3758331555618208987, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: whatIsWall.m_Bits
-      value: 64
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3758331555618208987, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
@@ -1131,6 +1229,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1008073647}
+    - target: {fileID: 5893715006593516743, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 6263572028704069877, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: m_Mesh
@@ -1149,7 +1252,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6484526048294183840, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 907477819}
   m_SourcePrefab: {fileID: 100100000, guid: f29cea7416f339e4fa5147d61abcf552, type: 3}
 --- !u!114 &1755922315 stripped
 MonoBehaviour:
@@ -1175,7 +1282,7 @@ GameObject:
   - component: {fileID: 1959461892}
   - component: {fileID: 1959461891}
   - component: {fileID: 1959461890}
-  m_Layer: 6
+  m_Layer: 3
   m_Name: Coob (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
