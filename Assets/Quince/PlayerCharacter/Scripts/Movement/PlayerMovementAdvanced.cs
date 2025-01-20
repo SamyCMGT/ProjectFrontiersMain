@@ -18,6 +18,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float vaultSpeed;
     public float airMinSpeed;
 
+    public float velRevertingSpeed = 2f;
+
     public float speedIncreaseMultiplier;
     public float slopeIncreaseMultiplier;
 
@@ -304,7 +306,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
         while (time < difference)
         {
-            moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / 2);
+            moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / velRevertingSpeed);
 
             if (OnSlope())
             {
