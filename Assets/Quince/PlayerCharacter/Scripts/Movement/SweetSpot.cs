@@ -12,59 +12,55 @@ public class SweetSpot : MonoBehaviour
 
     [Header("Boosting")]
     public float boostForce;
+    public float boostAirMultiplier;
 
+    private float oldJumpForce;
+    private float oldAirMultiplier;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         pm = GetComponent<PlayerMovementAdvanced>();
+
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         // Check if the player is inside the sweet spot
-        if (other.CompareTag("Sweet Spot") /*&& (Input.GetKeyDown(KeyCode.Space))*/)
+        if (other.CompareTag("Sweet Spot"))
         {
-            // Detect jump input
                 BoostingPlayer();    
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    { 
+        // Check if the player is outside the sweet spot
+        if (other.CompareTag("Sweet Spot"))
+        {
+            StopBoost();
         }
     }
 
     private void BoostingPlayer()
     {
-        //pm.boosting = true;
+        pm.boosting = true;
+        
+        oldJumpForce = pm.jumpForce;
+        oldAirMultiplier = pm.airMultiplier;
 
-        Transform forwardT;
+        pm.jumpForce = boostForce;
+        pm.airMultiplier = boostAirMultiplier;  
 
-        forwardT = playerCam;
-
-        Vector3 direction = GetDirection(forwardT);
-
-        // Calculate the force to apply
-        Vector3 forceToApply = direction * boostForce;
-
-        // Apply the force to the Rigidbody
-        rb.AddForce(forceToApply, ForceMode.Impulse);  // Impulse for an instant boost
 
         Debug.Log("Boosting");
     }
 
     private void StopBoost()
     {
-        //pm.boosting = false;
+        pm.boosting = false;
+        pm.jumpForce = oldJumpForce;
+        pm.airMultiplier = oldAirMultiplier;
     }
 
-    private Vector3 GetDirection(Transform forwardT)
-    {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
-
-        Vector3 direction = new Vector3();
-
-        direction = forwardT.forward;
-
-        if (verticalInput == 0 && horizontalInput == 0)
-            direction = forwardT.forward;
-
-        return direction.normalized;
-    }
 }

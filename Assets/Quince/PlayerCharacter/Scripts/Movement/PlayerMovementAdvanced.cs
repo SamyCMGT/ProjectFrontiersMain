@@ -18,9 +18,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float vaultSpeed;
     public float airMinSpeed;
 
-    public float boostSpeed;
-    public float boostSpeedIncrease;
-
     public float speedIncreaseMultiplier;
     public float slopeIncreaseMultiplier;
 
@@ -207,7 +204,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (boosting)
         {
             state = MovementState.boosting;
-            desiredMoveSpeed = desiredMoveSpeed += boostSpeedIncrease;
         }
 
         // Mode - Wallrunning
