@@ -11,7 +11,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private float desiredMoveSpeed;
     private float lastDesiredMoveSpeed;
     public float walkSpeed;
-    public float sprintSpeed;
+    public float slideGroundSpeed;
     public float slideSpeed;
     public float wallrunSpeed;
     public float climbSpeed;
@@ -47,7 +47,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
-    public KeyCode sprintKey = KeyCode.LeftShift;
     public KeyCode crouchKey = KeyCode.LeftControl;
 
     [Header("Ground Check")]
@@ -79,7 +78,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
         freeze,
         unlimited,
         walking,
-        sprinting,
         wallrunning,
         climbing,
         vaulting,
@@ -128,7 +126,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         TextStuff();
 
         // handle drag
-        if (state == MovementState.walking || state == MovementState.sprinting || state == MovementState.crouching)
+        if (state == MovementState.walking || state == MovementState.crouching)
             rb.drag = groundDrag;
         else
             rb.drag = 0;
@@ -232,7 +230,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
             }
 
             else
-                desiredMoveSpeed = sprintSpeed;
+                desiredMoveSpeed = slideGroundSpeed;
         }
 
         // Mode - Dashing
@@ -248,13 +246,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
         {
             state = MovementState.crouching;
             desiredMoveSpeed = crouchSpeed;
-        }
-
-        // Mode - Sprinting
-        else if (grounded && Input.GetKey(sprintKey))
-        {
-            state = MovementState.sprinting;
-            desiredMoveSpeed = sprintSpeed;
         }
 
         // Mode - Walking
