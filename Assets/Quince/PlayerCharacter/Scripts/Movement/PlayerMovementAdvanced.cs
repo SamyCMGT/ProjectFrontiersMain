@@ -18,6 +18,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float vaultSpeed;
     public float airMinSpeed;
 
+
+    public float hardSpeedCap;
     public float velRevertingSpeed = 2f;
 
     public float speedIncreaseMultiplier;
@@ -187,21 +189,21 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (unlimited)
         {
             state = MovementState.unlimited;
-            desiredMoveSpeed = 999f;
+            desiredMoveSpeed = Mathf.Min(999f, hardSpeedCap);
         }
 
         // Mode - Vaulting
         else if (vaulting)
         {
             state = MovementState.vaulting;
-            desiredMoveSpeed = vaultSpeed;
+            desiredMoveSpeed = Mathf.Min(vaultSpeed, hardSpeedCap);
         }
 
         // Mode - Climbing
         else if (climbing)
         {
             state = MovementState.climbing;
-            desiredMoveSpeed = climbSpeed;
+            desiredMoveSpeed = Mathf.Min(climbSpeed, hardSpeedCap);
         }
 
         // Mode - Boosting
@@ -209,7 +211,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         {
             state = MovementState.boosting;
 
-            desiredMoveSpeed = walkSpeed;
+            desiredMoveSpeed = Mathf.Min(walkSpeed, hardSpeedCap);
             keepMomentum = true;
         }
 
@@ -217,7 +219,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (wallrunning)
         {
             state = MovementState.wallrunning;
-            desiredMoveSpeed = desiredMoveSpeed += wallrunSpeedIncrease;
+            desiredMoveSpeed = Mathf.Min(desiredMoveSpeed += wallrunSpeedIncrease, hardSpeedCap);
         }
 
         // Mode - Sliding
@@ -228,12 +230,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
             // increase speed by one every second
             if (OnSlope() && rb.velocity.y < 0.1f)
             {
-                desiredMoveSpeed = slideSpeed;
+                desiredMoveSpeed = Mathf.Min(slideSpeed, hardSpeedCap);
                 keepMomentum = true;
             }
 
             else
-                desiredMoveSpeed = slideGroundSpeed;
+                desiredMoveSpeed = Mathf.Min(slideGroundSpeed, hardSpeedCap);
         }
 
         // Mode - Dashing
@@ -241,21 +243,21 @@ public class PlayerMovementAdvanced : MonoBehaviour
         {
             state = MovementState.dashing;
             desiredMoveSpeed = dashSpeed;
-            speedChangeFactor = dashSpeedChangeFactor;
+            speedChangeFactor = Mathf.Min(dashSpeedChangeFactor, hardSpeedCap);
         }
 
         // Mode - Crouching
         else if (crouching)
         {
             state = MovementState.crouching;
-            desiredMoveSpeed = crouchSpeed;
+            desiredMoveSpeed = Mathf.Min(crouchSpeed, hardSpeedCap);
         }
 
         // Mode - Walking
         else if (grounded)
         {
             state = MovementState.walking;
-            desiredMoveSpeed = walkSpeed;
+            desiredMoveSpeed = Mathf.Min(walkSpeed, hardSpeedCap);
             keepMomentum = true;
         }
 
@@ -265,7 +267,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
             state = MovementState.air;
 
             if (moveSpeed < airMinSpeed)
-                desiredMoveSpeed = airMinSpeed;
+                desiredMoveSpeed = Mathf.Min(airMinSpeed, hardSpeedCap);
         }
         
         
