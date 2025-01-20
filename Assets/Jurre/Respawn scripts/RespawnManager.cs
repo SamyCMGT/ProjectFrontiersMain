@@ -29,9 +29,4 @@ public class RespawnManager : MonoBehaviour
     {
         Player.transform.position = SavePosition;
     }
-
-    public void AddOneHealth()
-    {
-        
-    }
 }
