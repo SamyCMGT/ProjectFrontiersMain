@@ -110,6 +110,8 @@ public class PlayerMovementAdvanced : MonoBehaviour
         readyToJump = true;
 
         startYScale = transform.localScale.y;
+
+        moveSpeed = walkSpeed;
     }
 
     private void Update()
@@ -302,7 +304,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
 
         while (time < difference)
         {
-            moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / difference);
+            moveSpeed = Mathf.Lerp(startValue, desiredMoveSpeed, time / 2);
 
             if (OnSlope())
             {
