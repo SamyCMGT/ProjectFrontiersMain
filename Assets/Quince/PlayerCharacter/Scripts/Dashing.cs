@@ -41,8 +41,12 @@ public class Dashing : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(dashKey))
-            Dash();
+        if (Input.GetKeyDown(dashKey) && GameManager.Instance.dashCount >= 1)
+        { 
+            GameManager.Instance.UseDash();
+            Dash(); 
+        }
+            
 
         if (dashCdTimer > 0)
             dashCdTimer -= Time.deltaTime;

@@ -6,6 +6,6 @@ public class Checkpoint : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        RespawnManager.Instance.SavePosition = other.transform.position;
+        GameManager.Instance.SavePosition = other.transform.position;
     }
 }

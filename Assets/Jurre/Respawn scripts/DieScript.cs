@@ -6,6 +6,6 @@ public class DieScript : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        RespawnManager.Instance.Die();
+        GameManager.Instance.Die();
     }
 }
