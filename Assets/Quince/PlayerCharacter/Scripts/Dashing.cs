@@ -16,6 +16,7 @@ public class Dashing : MonoBehaviour
     public float maxDashYSpeed;
     public float dashDuration;
     private float setMoveSpeed;
+    public bool keepDashMomentum;
 
     [Header("CameraEffects")]
    /* public PlayerCam cam;
@@ -57,8 +58,12 @@ public class Dashing : MonoBehaviour
         if (dashCdTimer > 0) return;
         else dashCdTimer = dashCd;
 
-        // storing move speed for when resetting dash
-        setMoveSpeed = pm.desiredMoveSpeed;
+        if (keepDashMomentum == false)
+        {
+            // storing move speed for when resetting dash
+            setMoveSpeed = pm.desiredMoveSpeed;
+        }
+
 
         GameManager.Instance.UseDash();
         pm.dashing = true;
@@ -98,8 +103,14 @@ public class Dashing : MonoBehaviour
     private void ResetDash()
     {
         pm.dashing = false;
-        // resetting speed back to stored speed
-        pm.desiredMoveSpeed = setMoveSpeed;
+
+        if (keepDashMomentum == false)
+        {
+            // resetting speed back to stored speed
+            pm.desiredMoveSpeed = setMoveSpeed;
+        }
+
+
 
         pm.maxYSpeed = 0;
 

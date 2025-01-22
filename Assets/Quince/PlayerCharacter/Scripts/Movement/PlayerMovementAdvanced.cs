@@ -266,8 +266,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
         {
             state = MovementState.air;
 
+            keepMomentum = true;
             if (moveSpeed < airMinSpeed)
+            {
                 desiredMoveSpeed = Mathf.Min(airMinSpeed, hardSpeedCap);
+            }
+
         }
         
         
