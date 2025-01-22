@@ -43,7 +43,6 @@ public class Dashing : MonoBehaviour
     {
         if (Input.GetKeyDown(dashKey) && GameManager.Instance.dashCount >= 1)
         { 
-            GameManager.Instance.UseDash();
             Dash(); 
         }
             
@@ -57,6 +56,7 @@ public class Dashing : MonoBehaviour
         if (dashCdTimer > 0) return;
         else dashCdTimer = dashCd;
 
+        GameManager.Instance.UseDash();
         pm.dashing = true;
         pm.maxYSpeed = maxDashYSpeed;
 

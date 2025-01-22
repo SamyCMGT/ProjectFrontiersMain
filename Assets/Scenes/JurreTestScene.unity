@@ -2082,6 +2082,16 @@ PrefabInstance:
       objectReference: {fileID: 1719037757}
     - target: {fileID: 1247162291218614455, guid: ade1ee8bfe294204d91fdd49bbb4849f,
         type: 3}
+      propertyPath: dashCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247162291218614455, guid: ade1ee8bfe294204d91fdd49bbb4849f,
+        type: 3}
+      propertyPath: maxDashes
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 1247162291218614455, guid: ade1ee8bfe294204d91fdd49bbb4849f,
+        type: 3}
       propertyPath: textMeshProUGUI
       value: 
       objectReference: {fileID: 378610043}
