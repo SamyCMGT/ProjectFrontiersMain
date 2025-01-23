@@ -53,7 +53,7 @@ public class SweetSpot : MonoBehaviour
         pm.airMultiplier = boostAirMultiplier;  
 
 
-        Debug.Log("Boosting");
+        //Debug.Log("Boosting");
     }
 
     private void StopBoost()

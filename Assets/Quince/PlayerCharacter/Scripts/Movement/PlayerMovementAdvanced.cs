@@ -7,29 +7,35 @@ using System.Diagnostics;
 public class PlayerMovementAdvanced : MonoBehaviour
 {
     [Header("Movement")]
-    private float moveSpeed;
-    private float desiredMoveSpeed;
-    private float lastDesiredMoveSpeed;
+    public float desiredMoveSpeed;
     public float walkSpeed;
-    public float slideGroundSpeed;
-    public float slideSpeed;
-    public float wallrunSpeed;
+    private float lastDesiredMoveSpeed;
+    private float moveSpeed;
+    
+
+    [Header("bs")]
     public float climbSpeed;
     public float vaultSpeed;
-    public float airMinSpeed;
+
+    [Header("sliding speed")]
+    public float slideGroundSpeed;
+    public float slideSpeed;
+
+    [Header("Wall Running speed")]
+    public float wallrunSpeedIncrease;
+    public float wallrunSpeed;
 
 
     public float hardSpeedCap;
     public float velRevertingSpeed = 2f;
+    public float groundDrag;
+    public float airMinSpeed;
 
+    [Header("slope")]
     public float speedIncreaseMultiplier;
     public float slopeIncreaseMultiplier;
 
-    public float groundDrag;
-
-    [Header("Wall Running")]
-    public float wallrunSpeedIncrease;
-
+    
     [Header("Jumping")]
     public float jumpForce;
     public float jumpCooldown;
@@ -266,8 +272,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
         {
             state = MovementState.air;
 
+            keepMomentum = true;
             if (moveSpeed < airMinSpeed)
+            {
                 desiredMoveSpeed = Mathf.Min(airMinSpeed, hardSpeedCap);
+            }
+
         }
         
         

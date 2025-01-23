@@ -17,8 +17,16 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI textMeshProUGUI;
 
+    private RespawnManager respawnManager;
+
     private void Start()
     {
+        respawnManager = FindObjectOfType<RespawnManager>();
+
+        if (respawnManager == null)
+        {
+            Debug.LogError("RespawnManager not found in the scene!");
+        }
         textMeshProUGUI.text = $"Dashes: {dashCount}";
     }
 
@@ -57,9 +65,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    //add or remove 1 health, update the health UI and Go to lose scene if health is 0 or lower
     public void Die()
     {
         Player.transform.position = SavePosition;
+        respawnManager.RespawnAllPickups();
     }
 }

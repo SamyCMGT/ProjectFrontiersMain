@@ -15,10 +15,13 @@ public class Dashing : MonoBehaviour
     public float dashUpwardForce;
     public float maxDashYSpeed;
     public float dashDuration;
+    private float setMoveSpeed;
+    public bool keepDashMomentum;
+
 
     [Header("CameraEffects")]
-   /* public PlayerCam cam;
-    public float dashFov;*/
+    public PlayerCam cam;
+    public float dashFov;
 
     [Header("Settings")]
     public bool useCameraForward = true;
@@ -43,7 +46,6 @@ public class Dashing : MonoBehaviour
     {
         if (Input.GetKeyDown(dashKey) && GameManager.Instance.dashCount >= 1)
         { 
-            GameManager.Instance.UseDash();
             Dash(); 
         }
             
@@ -53,14 +55,22 @@ public class Dashing : MonoBehaviour
     }
 
     private void Dash()
-    {
+
+    { // storing move speed when resetting dash
+        if (keepDashMomentum == false)
+        {
+            // storing move speed for when resetting dash
+            setMoveSpeed = pm.desiredMoveSpeed;
+        }
+
         if (dashCdTimer > 0) return;
         else dashCdTimer = dashCd;
 
+        GameManager.Instance.UseDash();
         pm.dashing = true;
         pm.maxYSpeed = maxDashYSpeed;
 
-        //cam.DoFov(dashFov);
+        cam.DoFov(dashFov);
 
         Transform forwardT;
 
@@ -96,7 +106,13 @@ public class Dashing : MonoBehaviour
         pm.dashing = false;
         pm.maxYSpeed = 0;
 
-        //cam.DoFov(85f);
+        if (keepDashMomentum == false)
+        {
+            // resetting speed back to stored speed
+            pm.desiredMoveSpeed = setMoveSpeed;
+        }
+
+        cam.DoFov(85f);
 
         if (disableGravity)
             rb.useGravity = true;
