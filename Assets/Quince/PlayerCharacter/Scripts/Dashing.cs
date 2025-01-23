@@ -15,6 +15,9 @@ public class Dashing : MonoBehaviour
     public float dashUpwardForce;
     public float maxDashYSpeed;
     public float dashDuration;
+    private float setMoveSpeed;
+    public bool keepDashMomentum;
+
 
     [Header("CameraEffects")]
    /* public PlayerCam cam;
@@ -52,7 +55,14 @@ public class Dashing : MonoBehaviour
     }
 
     private void Dash()
-    {
+
+    { // storing move speed when resetting dash
+        if (keepDashMomentum == false)
+        {
+            // storing move speed for when resetting dash
+            setMoveSpeed = pm.desiredMoveSpeed;
+        }
+
         if (dashCdTimer > 0) return;
         else dashCdTimer = dashCd;
 
@@ -95,6 +105,12 @@ public class Dashing : MonoBehaviour
     {
         pm.dashing = false;
         pm.maxYSpeed = 0;
+
+        if (keepDashMomentum == false)
+        {
+            // resetting speed back to stored speed
+            pm.desiredMoveSpeed = setMoveSpeed;
+        }
 
         //cam.DoFov(85f);
 
