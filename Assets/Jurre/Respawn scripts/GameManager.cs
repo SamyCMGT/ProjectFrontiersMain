@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public Vector3 SavePosition;
     public float dashCount = 2;
     public float maxDashes = 99;
+    private float dashCountStart;
 
     public TextMeshProUGUI textMeshProUGUI;
 
@@ -29,6 +30,7 @@ public class GameManager : MonoBehaviour
             Debug.LogError("RespawnManager not found in the scene!");
         }
         textMeshProUGUI.text = $"Dashes: {dashCount}";
+        dashCountStart = dashCount;
     }
 
     private void Awake()
@@ -71,5 +73,7 @@ public class GameManager : MonoBehaviour
         Player.transform.position = SavePosition;
         PlayerRB.velocity = new Vector3(0,0,0);
         respawnManager.RespawnAllPickups();
+        dashCount = dashCountStart;
+        textMeshProUGUI.text = $"Dashes: {dashCount}";
     }
 }
