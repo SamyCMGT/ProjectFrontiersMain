@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2233610199192786179}
   - component: {fileID: 7570168460557391725}
   - component: {fileID: 6376017511313590116}
-  - component: {fileID: 519627492983513351}
   - component: {fileID: 2295458094615744769}
+  - component: {fileID: 3936094997589138159}
   m_Layer: 0
   m_Name: DashPickup
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2437080708112947136}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.49, y: 2.06, z: -25.92}
+  m_LocalPosition: {x: 28.89, y: 2.06, z: -25.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -85,18 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &519627492983513351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2437080708112947136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de60ddc9297ff3f4dbfcee464e3b1df2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!135 &2295458094615744769
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -118,3 +106,15 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3936094997589138159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2437080708112947136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710cd9e7c852dc74f934149562dc6c86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
