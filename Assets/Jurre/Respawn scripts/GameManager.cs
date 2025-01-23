@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public GameObject Player;
+    public Rigidbody PlayerRB;
 
     public Vector3 SavePosition;
     public float dashCount = 2;
@@ -68,6 +69,7 @@ public class GameManager : MonoBehaviour
     public void Die()
     {
         Player.transform.position = SavePosition;
+        PlayerRB.velocity = new Vector3(0,0,0);
         respawnManager.RespawnAllPickups();
     }
 }
