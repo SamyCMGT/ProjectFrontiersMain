@@ -159,7 +159,7 @@ public class WallRunningAdvanced : MonoBehaviour
         // upwards/downwards force
         if (upwardsRunning)
             rb.velocity = new Vector3(rb.velocity.x, wallClimbSpeed, rb.velocity.z);
-        if (downwardsRunning)
+        //if (downwardsRunning)
             rb.velocity = new Vector3(rb.velocity.x, -wallClimbSpeed, rb.velocity.z);
 
         // push to wall force
