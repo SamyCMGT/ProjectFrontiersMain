@@ -20,8 +20,8 @@ public class Dashing : MonoBehaviour
 
 
     [Header("CameraEffects")]
-   /* public PlayerCam cam;
-    public float dashFov;*/
+    public PlayerCam cam;
+    public float dashFov;
 
     [Header("Settings")]
     public bool useCameraForward = true;
@@ -70,7 +70,7 @@ public class Dashing : MonoBehaviour
         pm.dashing = true;
         pm.maxYSpeed = maxDashYSpeed;
 
-        //cam.DoFov(dashFov);
+        cam.DoFov(dashFov);
 
         Transform forwardT;
 
@@ -112,7 +112,7 @@ public class Dashing : MonoBehaviour
             pm.desiredMoveSpeed = setMoveSpeed;
         }
 
-        //cam.DoFov(85f);
+        cam.DoFov(85f);
 
         if (disableGravity)
             rb.useGravity = true;
