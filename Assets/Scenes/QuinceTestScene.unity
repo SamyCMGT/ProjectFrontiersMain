@@ -3968,7 +3968,7 @@ GameObject:
   - component: {fileID: 795181100}
   - component: {fileID: 795181099}
   - component: {fileID: 795181098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SweetSpot (1)
   m_TagString: Sweet Spot
   m_Icon: {fileID: 0}
@@ -4459,7 +4459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &825576751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4798,7 +4798,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 4f02b12eb4417e3439a308fd746f8e03, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8466,6 +8466,74 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168780588}
   m_Mesh: {fileID: -2432090755550338912, guid: 7dd5d4ef8dbab10488c25044f5ee93dd, type: 3}
+--- !u!1001 &1204471278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.47306156
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.8547792
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 101.258545
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6012465271902733643, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631923022554286874, guid: 39a57a7747f083940af4292cadb40eff,
+        type: 3}
+      propertyPath: m_Name
+      value: Checkpoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39a57a7747f083940af4292cadb40eff, type: 3}
 --- !u!1 &1207084237
 GameObject:
   m_ObjectHideFlags: 0
@@ -12578,3 +12646,4 @@ SceneRoots:
   - {fileID: 550798499}
   - {fileID: 609817644}
   - {fileID: 1148038682}
+  - {fileID: 1204471278}
