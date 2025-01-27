@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textMeshProUGUI;
 
     private RespawnManager respawnManager;
+    [SerializeField] private PlayerMovementAdvanced pm;
 
     private void Start()
     {
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
     public void Die()
     {
         Player.transform.position = SavePosition;
+        pm.moveSpeed = pm.walkSpeed;
         PlayerRB.velocity = new Vector3(0,0,0);
         respawnManager.RespawnAllPickups();
         dashCount = dashCountStart;

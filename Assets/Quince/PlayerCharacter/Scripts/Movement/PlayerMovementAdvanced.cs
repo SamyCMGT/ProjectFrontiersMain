@@ -8,9 +8,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
 {
     [Header("Movement")]
     public float desiredMoveSpeed;
-    public float walkSpeed;
+    public float walkSpeed = 7;
     private float lastDesiredMoveSpeed;
-    private float moveSpeed;
+    public float moveSpeed;
     
 
     [Header("bs")]
