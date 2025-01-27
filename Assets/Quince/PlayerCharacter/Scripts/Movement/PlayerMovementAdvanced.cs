@@ -135,7 +135,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         TextStuff();
 
         // handle drag
-        if (state == MovementState.walking || state == MovementState.crouching)
+        if (state == MovementState.walking || state == MovementState.crouching || state == MovementState.boosting)
             rb.drag = groundDrag;
         else
             rb.drag = 0;
