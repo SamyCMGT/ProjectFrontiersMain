@@ -1674,6 +1674,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
+      propertyPath: climbSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
       propertyPath: groundDrag
       value: 7
       objectReference: {fileID: 0}
@@ -1720,7 +1725,7 @@ PrefabInstance:
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: wallrunSpeedIncrease
-      value: 0.04
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3758331555618208987, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
@@ -1730,6 +1735,11 @@ PrefabInstance:
     - target: {fileID: 3758331555618208987, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
       propertyPath: upwardsRunKey
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758331555618208987, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
+      propertyPath: wallClimbSpeed
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3758331555618208987, guid: f29cea7416f339e4fa5147d61abcf552,

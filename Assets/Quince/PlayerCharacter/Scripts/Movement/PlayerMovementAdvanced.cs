@@ -225,7 +225,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (wallrunning)
         {
             state = MovementState.wallrunning;
-            desiredMoveSpeed = Mathf.Min(desiredMoveSpeed += wallrunSpeedIncrease, hardSpeedCap);
+            desiredMoveSpeed = Mathf.Min(desiredMoveSpeed += wallrunSpeedIncrease * Time.deltaTime, hardSpeedCap);
         }
 
         // Mode - Sliding
