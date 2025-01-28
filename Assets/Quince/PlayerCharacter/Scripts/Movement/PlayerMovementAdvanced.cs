@@ -139,6 +139,23 @@ public class PlayerMovementAdvanced : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if (moveSpeed >= 17)
+        {
+            GameManager.Instance.FastSpeed();
+        }
+        else if (moveSpeed >= 13 && moveSpeed < 17)
+        {
+            GameManager.Instance.MediumSpeed();
+        }
+        else if (moveSpeed >= 8.5 && moveSpeed < 13)
+        {
+            GameManager.Instance.SlowSpeed();
+        }
+        else if (moveSpeed >= 0 && moveSpeed < 8.5)
+        {
+            GameManager.Instance.StartingSpeed();
+        }
     }
 
     private void FixedUpdate()
