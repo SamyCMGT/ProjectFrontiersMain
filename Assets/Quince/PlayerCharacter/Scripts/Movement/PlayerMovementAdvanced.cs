@@ -8,9 +8,9 @@ public class PlayerMovementAdvanced : MonoBehaviour
 {
     [Header("Movement")]
     public float desiredMoveSpeed;
-    public float walkSpeed;
+    public float walkSpeed = 7;
     private float lastDesiredMoveSpeed;
-    private float moveSpeed;
+    public float moveSpeed;
     
 
     [Header("bs")]
@@ -135,7 +135,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         TextStuff();
 
         // handle drag
-        if (state == MovementState.walking || state == MovementState.crouching)
+        if (state == MovementState.walking || state == MovementState.crouching || state == MovementState.boosting)
             rb.drag = groundDrag;
         else
             rb.drag = 0;
@@ -225,7 +225,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         else if (wallrunning)
         {
             state = MovementState.wallrunning;
-            desiredMoveSpeed = Mathf.Min(desiredMoveSpeed += wallrunSpeedIncrease, hardSpeedCap);
+            desiredMoveSpeed = Mathf.Min(desiredMoveSpeed += wallrunSpeedIncrease * Time.deltaTime, hardSpeedCap);
         }
 
         // Mode - Sliding
