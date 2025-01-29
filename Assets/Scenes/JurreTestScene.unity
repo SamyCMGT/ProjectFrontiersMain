@@ -1136,7 +1136,7 @@ MonoBehaviour:
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
   m_Cameras:
-  - {fileID: 1776219044}
+  - {fileID: 2076600299}
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
@@ -2208,12 +2208,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8378784893030296191}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &1776219044 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2445525411748896926, guid: 12f984d10d91a904686b490b319988ef,
-    type: 3}
-  m_PrefabInstance: {fileID: 8378784893030296191}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1838915524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2358,6 +2352,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1584160871}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 186.077}
+--- !u!20 &2076600299 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2579564247472754111, guid: 12f984d10d91a904686b490b319988ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 8378784893030296191}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2084427265
 GameObject:
   m_ObjectHideFlags: 0
@@ -2735,7 +2735,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
-      objectReference: {fileID: 1776219044}
+      objectReference: {fileID: 2076600299}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
