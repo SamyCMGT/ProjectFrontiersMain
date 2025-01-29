@@ -54226,7 +54226,7 @@ GameObject:
   - component: {fileID: 1888219260}
   - component: {fileID: 1888219259}
   - component: {fileID: 1888219258}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PolyShape (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
