@@ -96,7 +96,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: bef4aa704f4ab0441a55b202f8f58025,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -6255,7 +6256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeCanvasGroup: {fileID: 1525090009}
   fadeDuration: 2
-  startMenuSceneName: FIrstLevel#1
+  startMenuSceneName: MainLevel1
   delayBeforeSceneLoad: 3
   timeBeforeFade: 15
   skipButton: {fileID: 1915156882}
