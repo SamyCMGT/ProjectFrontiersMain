@@ -15,6 +15,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro Scene.unity
     guid: ebac20b458a4eae419c485339c301a09
   - enabled: 1
-    path: Assets/Mees/Level 2.unity
+    path: Assets/Scenes/FIrstLevel#1.unity
+    guid: 1be2577ccd604024a9cf46f0d924f382
+  - enabled: 1
+    path: Assets/Scenes/Intermission.unity
+    guid: 4ce506abce58e1143a963f3161bbbe6e
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
     guid: b8e1f92c0f9bb1b439cc7514e2846f18
+  - enabled: 1
+    path: Assets/Scenes/Outro.unity
+    guid: b6cd208ab1b95524b8fb4187294ec481
   m_configObjects: {}
