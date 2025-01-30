@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<<< HEAD:Assets/SamAssets/Shaders/MobilePlats.mat
 --- !u!114 &-2089796738459697067
-========
---- !u!114 &-8101570381873972840
->>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/SamAssets/Materials/ForTheMapAssets/MainMapTexture2.mat
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -24,13 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< HEAD:Assets/SamAssets/Shaders/MobilePlats.mat
   m_Name: MobilePlats
   m_Shader: {fileID: -6465566751694194690, guid: dbf91437690b0ec44a49ce94d9c5c840,
-========
-  m_Name: MainMapTexture2
-  m_Shader: {fileID: -6465566751694194690, guid: bf3ba467e0c26e642ae11a211879c6ef,
->>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/SamAssets/Materials/ForTheMapAssets/MainMapTexture2.mat
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -39,7 +30,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 1950
+  m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
   m_LockedProperties: 
@@ -64,7 +55,6 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-<<<<<<<< HEAD:Assets/SamAssets/Shaders/MobilePlats.mat
     - _NoiseScale: 10
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -78,19 +68,4 @@ Material:
     - _PaintXY: {r: 1, g: 1, b: 0, a: 0}
     - _Seed: {r: 0, g: 0, b: 0, a: 0}
     - _TileXY: {r: 1.71, g: 0.82, b: 0, a: 0}
-========
-    - _NoiseScale: 28
-    - _QueueControl: 0
-    - _QueueOffset: -50
-    - _StepA: 0.5
-    - _StepB: 0.5
-    - _TileScale: 2.1
-    - _Timer: 0.01
-    m_Colors:
-    - _Color: {r: 0.912568, g: 0.912568, b: 0.912568, a: 0}
-    - _NoiseColor: {r: 0, g: 1.9895287, b: 2, a: 1}
-    - _PaintXY: {r: 0.38, g: 0.35, b: 0, a: 0}
-    - _Seed: {r: 0, g: 0, b: 0, a: 0}
-    - _TileXY: {r: 1, g: 0.34, b: 0, a: 0}
->>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/SamAssets/Materials/ForTheMapAssets/MainMapTexture2.mat
   m_BuildTextureStacks: []

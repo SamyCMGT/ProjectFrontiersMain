@@ -548,23 +548,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-<<<<<<<< HEAD:Assets/SamAssets/Shaders/MainMapTextureMobile.shadergraph
-========
-                    "m_Id": "bce3043f3dd246e08c3c84dd5dd7eda0"
-                },
-                "m_SlotId": 3
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "f45fc6e6adb14dcb994b14b0521aa1e6"
-                },
-                "m_SlotId": 0
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
->>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/SamAssets/Shaders/MainMapTexture.shadergraph
                     "m_Id": "c208f745395c4532b2fb3849e39c1674"
                 },
                 "m_SlotId": 0
