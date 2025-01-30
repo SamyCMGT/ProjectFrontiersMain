@@ -66,20 +66,14 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private RaycastHit slopeHit;
     private bool exitingSlope;
 
-
     [Header("References")]
     public Climbing climbingScript;
     private ClimbingDone climbingScriptDone;
-    public PlayerAudio playerAudio;
 
     public Transform orientation;
 
-    public float horizontalInput;
-    public float verticalInput;
-
-    public bool wasGrounded;
-    public bool wasFalling;
-    public float startOffFall;
+    float horizontalInput;
+    float verticalInput;
 
     Vector3 moveDirection;
 
@@ -98,12 +92,10 @@ public class PlayerMovementAdvanced : MonoBehaviour
         sliding,
         dashing,
         boosting,
-        idle,
         air
     }
 
     public bool sliding;
-    public bool idle;
     public bool crouching;
     public bool wallrunning;
     public bool dashing;
@@ -169,20 +161,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
-        if (!wasFalling && isFalling) startOffFall = transform.position.y;
-        if (!wasGrounded && grounded)
-        {
-            playerAudio.playLandAudio();
-        }
-
-        wasGrounded = grounded;
-        wasFalling = isFalling;
-
-        wasGrounded = grounded;
-        wasFalling = isFalling;
     }
-
-    bool isFalling { get { return (!grounded && rb.velocity.y < 0); } }
 
     private void MyInput()
     {
@@ -282,13 +261,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
                 desiredMoveSpeed = Mathf.Min(slideGroundSpeed, hardSpeedCap);
         }
 
-        // Mode - Idle
-        else if (grounded)
-        {
-            state = MovementState.idle;
-
-        }
-
         // Mode - Dashing
         else if (dashing)
         {
@@ -305,7 +277,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         }
 
         // Mode - Walking
-        else if (grounded && (horizontalInput != 0 || verticalInput != 0))
+        else if (grounded)
         {
             state = MovementState.walking;
             desiredMoveSpeed = Mathf.Min(walkSpeed, hardSpeedCap);
@@ -450,17 +422,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-
-        //Jump
-        if (boosting)
-        {
-            playerAudio.PlaySweetSpotAudio();
-        }
-        else
-        {
-            playerAudio.playJumpAudio();
-        }
-        exitingSlope = true;
     }
     private void ResetJump()
     {

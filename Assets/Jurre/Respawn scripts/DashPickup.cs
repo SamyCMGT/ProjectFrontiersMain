@@ -7,7 +7,6 @@ public class DashPickup : MonoBehaviour
     private BoxCollider boxCollider;
     private MeshRenderer meshRenderer;
     private bool shouldRespawn = false;
-    public PlayerAudio playerAudio;
 
     private void Start()
     {
@@ -31,8 +30,6 @@ public class DashPickup : MonoBehaviour
             boxCollider.enabled = false;
             meshRenderer.enabled = false;
             Debug.Log($"{gameObject.name}: Disabled the collider and mesh renderer");
-
-            playerAudio.playDashPickUpAudio();
         }
     }
 
