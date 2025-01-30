@@ -5312,6 +5312,11 @@ PrefabInstance:
       objectReference: {fileID: 796603732}
     - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
         type: 3}
+      propertyPath: climbSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676115169969594658, guid: f29cea7416f339e4fa5147d61abcf552,
+        type: 3}
       propertyPath: groundDrag
       value: 7
       objectReference: {fileID: 0}

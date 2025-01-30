@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class DashPickup : MonoBehaviour
 {
-    private SphereCollider sphereCollider;
+    private BoxCollider boxCollider;
     private MeshRenderer meshRenderer;
     private bool shouldRespawn = false;
 
     private void Start()
     {
         // Cache components
-        sphereCollider = GetComponent<SphereCollider>();
+        boxCollider = GetComponent<BoxCollider>();
         meshRenderer = GetComponent<MeshRenderer>();
 
         // Register with the RespawnManager
@@ -27,7 +27,7 @@ public class DashPickup : MonoBehaviour
         else
         {
             GameManager.Instance.DashPickup();
-            sphereCollider.enabled = false;
+            boxCollider.enabled = false;
             meshRenderer.enabled = false;
             Debug.Log($"{gameObject.name}: Disabled the collider and mesh renderer");
         }
@@ -49,7 +49,7 @@ public class DashPickup : MonoBehaviour
 
     private void DoRespawn()
     {
-        sphereCollider.enabled = true;
+        boxCollider.enabled = true;
         meshRenderer.enabled = true;
         shouldRespawn = false;
         Debug.Log($"{gameObject.name}: Enabled the collider and mesh renderer");

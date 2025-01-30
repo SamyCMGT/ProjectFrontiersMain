@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,16 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textMeshProUGUI;
 
     private RespawnManager respawnManager;
+    public PlayerMovementAdvanced pm;
+
+    //UI management
+
+    private ParticleSystem.MinMaxCurve speedStart;
+    private ParticleSystem.MinMaxCurve spawnRate;
+    private bool looping;
+
+    public ParticleSystem sl;
+    private ParticleSystem.EmissionModule emissionSl;
 
     private void Start()
     {
@@ -31,6 +42,10 @@ public class GameManager : MonoBehaviour
         }
         textMeshProUGUI.text = $"Dashes: {dashCount}";
         dashCountStart = dashCount;
+
+        emissionSl = sl.emission;
+
+        emissionSl.rate = 0f;
     }
 
     private void Awake()
@@ -71,9 +86,30 @@ public class GameManager : MonoBehaviour
     public void Die()
     {
         Player.transform.position = SavePosition;
+        pm.moveSpeed = pm.walkSpeed;
         PlayerRB.velocity = new Vector3(0,0,0);
         respawnManager.RespawnAllPickups();
         dashCount = dashCountStart;
         textMeshProUGUI.text = $"Dashes: {dashCount}";
+    }
+
+    //UI functions
+    public void StartingSpeed()
+    {
+        emissionSl.rate = 0f;
+    }
+    public void SlowSpeed()
+    {
+        emissionSl.rate = 10.0f;
+    }
+
+    public void MediumSpeed()
+    {
+        emissionSl.rate = 50.0f;
+    }
+
+    public void FastSpeed()
+    {
+        emissionSl.rate = 125.0f;
     }
 }
