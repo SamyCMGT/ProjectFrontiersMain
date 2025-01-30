@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SamAssets/Resources/Materials2/OutlineMask2.mat.meta
 guid: dbe80106368b3fd4eb1a38bdca439c31
+========
+guid: cc25593f982b9ce4089d6a7d50d01812
+>>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/SamAssets/Resources/Materials2/OutlineFill2.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

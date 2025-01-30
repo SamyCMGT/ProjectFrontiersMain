@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SamAssets/Shaders/BoosterMain.mat.meta
 guid: f4a56ac7b4cb7204a9ad461464c2a52b
+========
+guid: dbe80106368b3fd4eb1a38bdca439c31
+>>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/SamAssets/Resources/Materials2/OutlineMask2.mat.meta
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000

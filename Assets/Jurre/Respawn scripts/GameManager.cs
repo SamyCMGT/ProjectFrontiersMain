@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR;
@@ -22,7 +21,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textMeshProUGUI;
 
     private RespawnManager respawnManager;
-    [SerializeField] private PlayerMovementAdvanced pm;
+    public PlayerMovementAdvanced pm;
 
     //UI management
 
@@ -30,7 +29,7 @@ public class GameManager : MonoBehaviour
     private ParticleSystem.MinMaxCurve spawnRate;
     private bool looping;
 
-    [SerializeField] private ParticleSystem sl;
+    public ParticleSystem sl;
     private ParticleSystem.EmissionModule emissionSl;
 
     private void Start()

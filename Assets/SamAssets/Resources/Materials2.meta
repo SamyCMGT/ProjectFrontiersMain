@@ -1,10 +1,18 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SamAssets/Resources/Materials2.meta
 guid: 3b5bb547e5d66d2479a73a5db81974ea
 folderAsset: yes
 timeCreated: 1522559139
 licenseType: Store
 DefaultImporter:
+========
+guid: eb3e212566a7337439ccd56a3d998e82
+timeCreated: 1520575782
+licenseType: Store
+ShaderImporter:
+>>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/SamAssets/Resources/Shaders2/OutlineFill2.shader.meta
   externalObjects: {}
+  defaultTextures: []
   userData: 
   assetBundleName: 
   assetBundleVariant: 
