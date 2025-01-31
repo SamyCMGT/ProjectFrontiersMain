@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4ca0becb-8df0-4782-8af1-dec5e83ab9de}">
+		<property name="assetPath">
+			<value>253172__suntemple__retro-bonus-pickup-sfx.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.34376417233560091</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{a1628962-3d99-4595-b6e8-28edb845e4bc}</destination>
+		</relationship>
+	</object>
+</objects>

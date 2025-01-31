@@ -6,9 +6,11 @@ public class SceneLoader : MonoBehaviour
 {
     public int SceneIndexG = 0;
     public int UnityIndex = 0;
+    public PlayerMovementAdvanced pm;
     public void LoadScene(int pSceneIndex)
     {
         Debug.Log("Loading");
+        pm.destroyPlayer();
         SceneManager.LoadScene(pSceneIndex);
     }
 

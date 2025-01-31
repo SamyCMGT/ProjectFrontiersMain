@@ -1,0 +1,713 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9209139122525405630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Sliding
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Sliding
+  Guid:
+    Data1: 1318245093
+    Data2: 1204303336
+    Data3: -2142464085
+    Data4: -1133734340
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5578
+--- !u!114 &-8916600142129032917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Quince/FMOD/Frontiers/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638738848509013795
+  FileSizes:
+  - Name: Desktop
+    Value: 1864
+  Exists: 1
+--- !u!114 &-8338325315553726338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Items/Dash Pickup
+  m_EditorClassIdentifier: 
+  Path: event:/Items/Dash Pickup
+  Guid:
+    Data1: 48754524
+    Data2: 1080818778
+    Data3: -2072734816
+    Data4: 414212901
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 343
+--- !u!114 &-8074895436066886359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Wall running
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Wall running
+  Guid:
+    Data1: 1929457970
+    Data2: 1210486242
+    Data3: -1033391953
+    Data4: 990821796
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &-8023882564396485922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Wind
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Wind
+  Guid:
+    Data1: 736781863
+    Data2: 1093551716
+    Data3: -281381194
+    Data4: -1323471748
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32000
+--- !u!114 &-7828050987371721997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Outro/Out ro The rapist
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Outro/Out ro The rapist
+  Guid:
+    Data1: -1682941306
+    Data2: 1324135923
+    Data3: 1754259620
+    Data4: 679524762
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13800
+--- !u!114 &-6795829946470628085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Level 2/Level 2
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Level 2/Level 2
+  Guid:
+    Data1: -345868463
+    Data2: 1215626192
+    Data3: 1579871630
+    Data4: 2139126038
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 171500
+--- !u!114 &-4549068167720609611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music Level
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music Level
+  Guid:
+    Data1: 2023130948
+    Data2: 1167159301
+    Data3: -1016002679
+    Data4: -1239011893
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -1918646612208607165}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 135843
+--- !u!114 &-4429763971954925415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Walking
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Walking
+  Guid:
+    Data1: -1249089492
+    Data2: 1113738798
+    Data3: 2020246932
+    Data4: 1035729013
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 450
+--- !u!114 &-4313420385363357911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Cutscene/Sanders
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Cutscene/Sanders
+  Guid:
+    Data1: 1067853453
+    Data2: 1223234165
+    Data3: -1199423329
+    Data4: -1519637760
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17200
+--- !u!114 &-4202307166437569562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Quince/FMOD/Frontiers/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638738848508987254
+  FileSizes:
+  - Name: Desktop
+    Value: 7262080
+  Exists: 1
+--- !u!114 &-3098128042092909770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Items/Respawn
+  m_EditorClassIdentifier: 
+  Path: event:/Items/Respawn
+  Guid:
+    Data1: 516507223
+    Data2: 1119009277
+    Data3: 762118034
+    Data4: -1864900588
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3996
+--- !u!114 &-2209142889493456876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Landing
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Landing
+  Guid:
+    Data1: 903187023
+    Data2: 1099102603
+    Data3: 1130476463
+    Data4: -1399484404
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 132
+--- !u!114 &-1918646612208607165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music Level/Music loop state
+  m_EditorClassIdentifier: 
+  Name: Music loop state
+  StudioPath: 
+  Min: 0
+  Max: 6
+  Default: 0
+  ID:
+    data1: 3711437059
+    data2: 1296491411
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - intro
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - outro
+  Exists: 1
+--- !u!114 &-1295564395779322179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Sweet Spot
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Sweet Spot
+  Guid:
+    Data1: -140173976
+    Data2: 1114576283
+    Data3: -181570656
+    Data4: 249194503
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 354
+--- !u!114 &-459566310635018538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Intermission/The Rapist Intermission
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Intermission/The Rapist Intermission
+  Guid:
+    Data1: -859987736
+    Data2: 1173662067
+    Data3: -1107200097
+    Data4: -864875871
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32700
+--- !u!114 &-438398113519290335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Intermission/Intermission
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Intermission/Intermission
+  Guid:
+    Data1: 1802426363
+    Data2: 1252524554
+    Data3: -1656121667
+    Data4: 1921420284
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32300
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -8916600142129032917}
+  - {fileID: -4202307166437569562}
+  EditorEvents:
+  - {fileID: 1940844216020659345}
+  - {fileID: 7563513074165612776}
+  - {fileID: 4803956079497604964}
+  - {fileID: -8023882564396485922}
+  - {fileID: -4429763971954925415}
+  - {fileID: -8074895436066886359}
+  - {fileID: 6691187145814335396}
+  - {fileID: -4549068167720609611}
+  - {fileID: -2209142889493456876}
+  - {fileID: -6795829946470628085}
+  - {fileID: -3098128042092909770}
+  - {fileID: -8338325315553726338}
+  - {fileID: -1295564395779322179}
+  - {fileID: 7290163967940960267}
+  - {fileID: -4313420385363357911}
+  - {fileID: 614353260189316816}
+  - {fileID: 6977203286364463165}
+  - {fileID: -9209139122525405630}
+  - {fileID: -438398113519290335}
+  - {fileID: 7791356335105819351}
+  - {fileID: -459566310635018538}
+  - {fileID: -7828050987371721997}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -4202307166437569562}
+  StringsBanks:
+  - {fileID: -8916600142129032917}
+  cacheTime: 638738848509013795
+  cacheVersion: 131621
+--- !u!114 &614353260189316816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Jump
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Jump
+  Guid:
+    Data1: -455055464
+    Data2: 1230222100
+    Data3: 2142890634
+    Data4: -1674999227
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 354
+--- !u!114 &1940844216020659345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Wind therapy
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Wind therapy
+  Guid:
+    Data1: 1097744652
+    Data2: 1277552609
+    Data3: -1411160396
+    Data4: -2041233828
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57957
+--- !u!114 &4803956079497604964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Dash
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Dash
+  Guid:
+    Data1: -639018972
+    Data2: 1125231445
+    Data3: -1769222254
+    Data4: 58620451
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 600
+--- !u!114 &6691187145814335396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Items/Checkpoint
+  m_EditorClassIdentifier: 
+  Path: event:/Items/Checkpoint
+  Guid:
+    Data1: -1486560456
+    Data2: 1122138405
+    Data3: 1762479752
+    Data4: -1235677179
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &6977203286364463165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Outro/Outro
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Outro/Outro
+  Guid:
+    Data1: -2003344429
+    Data2: 1119190712
+    Data3: 414697607
+    Data4: -1610944232
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17862
+--- !u!114 &7290163967940960267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Birds
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Birds
+  Guid:
+    Data1: -97981321
+    Data2: 1133734984
+    Data3: -1877326407
+    Data4: 1292955773
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 10004
+--- !u!114 &7563513074165612776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Level 1/Sanders
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Level 1/Sanders
+  Guid:
+    Data1: 1721637662
+    Data2: 1121355433
+    Data3: 2117190030
+    Data4: -962449759
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 106600
+--- !u!114 &7791356335105819351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue/Cutscene/The rapist
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue/Cutscene/The rapist
+  Guid:
+    Data1: 104694682
+    Data2: 1340972570
+    Data3: 109756577
+    Data4: -1303685722
+  Banks:
+  - {fileID: -4202307166437569562}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13200

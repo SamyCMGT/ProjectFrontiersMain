@@ -25,7 +25,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public float wallrunSpeedIncrease;
     public float wallrunSpeed;
 
-
     public float hardSpeedCap;
     public float velRevertingSpeed = 2f;
     public float groundDrag;
@@ -69,11 +68,16 @@ public class PlayerMovementAdvanced : MonoBehaviour
     [Header("References")]
     public Climbing climbingScript;
     private ClimbingDone climbingScriptDone;
+    public PlayerAudio playerAudio;
 
     public Transform orientation;
 
-    float horizontalInput;
-    float verticalInput;
+     public float horizontalInput;
+     public float verticalInput;
+
+    public bool wasGrounded;
+    public bool wasFalling;
+    public float startOffFall;
 
     Vector3 moveDirection;
 
@@ -92,6 +96,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
         sliding,
         dashing,
         boosting,
+        idle,
         air
     }
 
@@ -102,6 +107,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
     public bool climbing;
     public bool vaulting;
     public bool boosting;
+    public bool idle;
 
     public bool freeze;
     public bool unlimited;
@@ -161,8 +167,28 @@ public class PlayerMovementAdvanced : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+
+        MovePlayer();
+        if (!wasFalling && isFalling) startOffFall = transform.position.y;
+        if (!wasGrounded && grounded)
+        {
+            playerAudio.playLandAudio();
+        }
+
+        wasGrounded = grounded;
+        wasFalling = isFalling;
+
+        wasGrounded = grounded;
+        wasFalling = isFalling;
     }
 
+    bool isFalling { get { return (!grounded && rb.velocity.y < 0); } }
+
+    public void destroyPlayer()
+    {
+        Destroy(gameObject);
+    }
+    
     private void MyInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -260,7 +286,7 @@ public class PlayerMovementAdvanced : MonoBehaviour
             else
                 desiredMoveSpeed = Mathf.Min(slideGroundSpeed, hardSpeedCap);
         }
-
+      
         // Mode - Dashing
         else if (dashing)
         {
@@ -284,6 +310,12 @@ public class PlayerMovementAdvanced : MonoBehaviour
             keepMomentum = true;
         }
 
+        // Mode - Idle
+        else if (grounded)
+        {
+            state = MovementState.idle;
+
+        }
         // Mode - Air
         else
         {
@@ -296,9 +328,6 @@ public class PlayerMovementAdvanced : MonoBehaviour
             }
 
         }
-        
-        
-        
 
         bool desiredMoveSpeedHasChanged = desiredMoveSpeed != lastDesiredMoveSpeed;
         if (lastState == MovementState.dashing) keepMomentum = true;
@@ -422,6 +451,17 @@ public class PlayerMovementAdvanced : MonoBehaviour
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+
+        if (boosting)
+        {
+            playerAudio.PlaySweetSpotAudio();
+        }
+        else
+        {
+            playerAudio.playJumpAudio();
+        }
+        exitingSlope = true;
+
     }
     private void ResetJump()
     {
