@@ -1,6 +1,12 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/SamAssets/Materials/ForLvl2.meta
+guid: e6f91402a0a3c6047986f76ac62ca41a
+folderAsset: yes
+DefaultImporter:
+========
 guid: 11fa2034a1fc7ed40b0a644fa680c340
 PrefabImporter:
+>>>>>>>> 5689a9d8450c2b4efe9ac65f1b4e85a6609d35b7:Assets/Vefects/Free Fire VFX URP/Particles/VFX_Fire_Floor_02.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
