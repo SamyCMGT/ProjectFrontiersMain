@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000168F1521978 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000002C58D9B15B8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,98 +16,12 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7212832
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 49248
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000030F6EDECF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E3C25B90
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E3C25B50
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E3C25C70
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E3C25D30
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000167C2B0B9D8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Landing 3', format=5, channels=2, frequency=48000, lengthbytes=1408, lengthpcm=5955, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.143951.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7212832
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 49248
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000030F6EDECF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E3C25B90
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E3C25B50
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E3C25C70
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E3C25D30
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000167C2B0B9D8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Landing 1', format=5, channels=2, frequency=48000, lengthbytes=1344, lengthpcm=5590, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.159668.
-[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
-[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 7212832
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 49248
-[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000030F6EDECF8
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF9E3C25B90
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF9E3C25B50
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF9E3C25C70
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF9E3C25D30
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000167C2B0B9D8
-[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
-[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Landing 2', format=5, channels=2, frequency=48000, lengthbytes=1536, lengthpcm=6339, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.099701.
-[LOG] SoundI::release                          : FrontiersSong4 (00000165D4B54E08)
-[LOG] SoundI::release                          :     FrontiersSong4 (00000168CCCD9558)
-[LOG] SoundI::release                          :     FrontiersSong4 (00000168C9DDCED8)
-[LOG] SoundI::release                          : Frontiers Dialogue Game (00000167AEBDACA8)
-[LOG] SoundI::release                          :     Frontiers Dialogue Game (00000167B0050748)
-[LOG] SoundI::release                          :     Frontiers Dialogue Game (00000168CC4602E8)
-[LOG] SoundI::release                          : 205962__kangaroovindaloo__light-wind (00000167AEBDA798)
-[LOG] SoundI::release                          :     205962__kangaroovindaloo__light-wind (00000167B0050A88)
-[LOG] SoundI::release                          :     205962__kangaroovindaloo__light-wind (00000168CC45BDB8)
-[LOG] SoundI::release                          : 205962__kangaroovindaloo__light-wind (00000165D4B54088)
-[LOG] SoundI::release                          :     205962__kangaroovindaloo__light-wind (00000168CCCD8D38)
-[LOG] SoundI::release                          :     205962__kangaroovindaloo__light-wind (00000168C9DDC818)
-[LOG] SoundI::release                          :  (00000165CC746B48)
-[LOG] SoundI::release                          :     Landing 1 (00000167B0050C28)
-[LOG] SoundI::release                          :  (00000165CC7438F8)
-[LOG] SoundI::release                          :     Landing 2 (00000167B00505A8)
-[LOG] SoundI::release                          :  (00000165CC745A08)
-[LOG] SoundI::release                          :     Landing 3 (00000167B00500C8)
-[LOG] SoundI::release                          :  (00000165CC744BA8)
-[LOG] SoundI::release                          :     Slide4 (0000016875A9C838)
-[LOG] SoundI::release                          :  (00000165CC742088)
-[LOG] SoundI::release                          :     Reverse slide (0000016900AD00C8)
-[LOG] SoundI::release                          :  (00000165CC746868)
-[LOG] SoundI::release                          :     Footstep1 - Trimmed (0000016875A9BE78)
-[LOG] SoundI::release                          :  (00000165CC741958)
-[LOG] SoundI::release                          :     Footstep2 - Trimmed (0000016900AD0408)
-[LOG] SoundI::release                          :  (00000165CC7466F8)
-[LOG] SoundI::release                          :     Footstep3 - Trimmed (000001678B92D288)
-[LOG] SoundI::release                          :  (00000165CC7417E8)
-[LOG] SoundI::release                          :     Footstep4 - Trimmed (0000016900AD08E8)
-[LOG] SoundI::release                          :  (00000165CC744D18)
-[LOG] SoundI::release                          :     Footstep5 - Trimmed (0000016900AD0268)
-[LOG] SoundI::release                          :  (00000165CC746138)
-[LOG] SoundI::release                          :     Footstep6 - Trimmed (0000016875A9C9D8)
-[LOG] SoundI::release                          :  (00000165CC745898)
-[LOG] SoundI::release                          :     Footstep7 - Trimmed (0000016875A9C4F8)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.

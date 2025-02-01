@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/Quince/FMOD/Frontiers/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638738848509013795
+  lastModified: 638738866237943504
   FileSizes:
   - Name: Desktop
     Value: 1864
@@ -279,7 +279,7 @@ MonoBehaviour:
   Path: Assets/Quince/FMOD/Frontiers/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638738848508987254
+  lastModified: 638738866237933510
   FileSizes:
   - Name: Desktop
     Value: 7262080
@@ -493,7 +493,7 @@ MonoBehaviour:
   - {fileID: -4202307166437569562}
   StringsBanks:
   - {fileID: -8916600142129032917}
-  cacheTime: 638738848509013795
+  cacheTime: 638738866237943504
   cacheVersion: 131621
 --- !u!114 &614353260189316816
 MonoBehaviour:

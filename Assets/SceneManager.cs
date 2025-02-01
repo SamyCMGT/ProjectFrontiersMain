@@ -1,26 +1,61 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class SceneLoader : MonoBehaviour
 {
+    [Header("Scene Settings")]
     public int SceneIndexG = 0;
-    public int UnityIndex = 0;
     public PlayerMovementAdvanced pm;
-    public void LoadScene(int pSceneIndex)
+
+    [Header("Fade Settings")]
+    [SerializeField] private CanvasGroup fadeCanvasGroup; 
+    [SerializeField] private float fadeDuration = 3f; 
+
+    private bool isFading = false;
+
+    private void Start()
     {
-        Debug.Log("Loading");
-        pm.destroyPlayer();
-        SceneManager.LoadScene(pSceneIndex);
+        if (fadeCanvasGroup != null)
+        {
+            fadeCanvasGroup.alpha = 0f; 
+        }
     }
 
-    public void QuitGame()
-    {
-        Debug.Log("Quitting");
-        Application.Quit();
-    }
     private void OnTriggerEnter(Collider other)
     {
+        if (!isFading)
+        {
+            StartCoroutine(FadeAndLoadScene());
+        }
+    }
+
+    private IEnumerator FadeAndLoadScene()
+    {
+        isFading = true;
+
+        yield return StartCoroutine(Fade(1f));
+
+        if (pm != null)
+        {
+            pm.destroyPlayer();
+        }
+
         SceneManager.LoadScene(SceneIndexG);
+    }
+
+    private IEnumerator Fade(float targetAlpha)
+    {
+        float startAlpha = fadeCanvasGroup.alpha;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeDuration)
+        {
+            fadeCanvasGroup.alpha = Mathf.Lerp(startAlpha, targetAlpha, elapsedTime / fadeDuration);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
+        fadeCanvasGroup.alpha = targetAlpha;
     }
 }
